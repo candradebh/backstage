@@ -11,19 +11,19 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: "ubuntu-18.04"
+    runs-on: "ubuntu-22.04"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Build an image from Dockerfile
         run: |
-          docker build -t docker.io/khuedoan/backstage:${{ github.sha }} .
+          docker build -t docker.io/candradebh/backstage:${{ github.sha }} .
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@2a2157eb22c08c9a1fac99263430307b8d1bc7a2
         with:
-          image-ref: 'docker.io/khuedoan/backstage:${{ github.sha }}'
+          image-ref: 'docker.io/candradebh/backstage:${{ github.sha }}'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'

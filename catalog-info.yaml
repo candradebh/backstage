@@ -8,7 +8,7 @@ metadata:
   name: public
   description: Public services
 spec:
-  owner: multiversonline
+  owner: candradebh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -16,7 +16,7 @@ metadata:
   name: internal-platform
   description: Internal applications
 spec:
-  owner: multiversonline
+  owner: candradebh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -24,7 +24,7 @@ metadata:
   name: infrastructure
   description: Self-hosting
 spec:
-  owner: multiversonline
+  owner: candradebh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -32,7 +32,7 @@ metadata:
   name: workstation
   description: Workstation
 spec:
-  owner: multiversonline
+  owner: candradebh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -40,7 +40,7 @@ metadata:
   name: tools
   description: tools
 spec:
-  owner: multiversonline
+  owner: candradebh
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -55,11 +55,11 @@ metadata:
     - title: Storybook
       url: https://backstage.io/storybook
   annotations:
-    github.com/project-slug: multiversonline/backstage
+    github.com/project-slug: candradebh/backstage
     backstage.io/techdocs-ref: url:https://github.com/backstage/backstage
 spec:
   type: website
-  owner: multiversonline
+  owner: candradebh
   lifecycle: experimental
   system: internal-platform
   dependsOn:
@@ -76,11 +76,11 @@ metadata:
     - title: Documentation
       url: https://homelab.multiversonline.com
   annotations:
-    github.com/project-slug: multiversonline/homelab
-    backstage.io/techdocs-ref: url:https://github.com/multiversonline/homelab
+    github.com/project-slug: candradebh/homelab2026
+    backstage.io/techdocs-ref: url:https://github.com/candradebh/homelab2026
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: experimental
   system: infrastructure
   dependsOn:
@@ -94,10 +94,10 @@ metadata:
   name: horus
   description: Self-hosting infrastructure, fully automated from empty disk to operating services.
   annotations:
-    github.com/project-slug: multiversonline/horus
+    github.com/project-slug: candradebh/horus
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: experimental
   system: infrastructure
   dependsOn:
@@ -109,10 +109,10 @@ metadata:
   name: virtual-networks
   description: Virtual networks based on Zerotier
   annotations:
-    github.com/project-slug: multiversonline/virtual-networks
+    github.com/project-slug: candradebh/virtual-networks
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: infrastructure
   dependsOn:
@@ -124,10 +124,10 @@ metadata:
   name: freevpn
   description: Free VPN
   annotations:
-    github.com/project-slug: multiversonline/freevpn
+    github.com/project-slug: candradebh/freevpn
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: infrastructure
   dependsOn:
@@ -139,10 +139,10 @@ metadata:
   name: router
   description: Router configuration as code
   annotations:
-    github.com/project-slug: multiversonline/router
+    github.com/project-slug: candradebh/router
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: experimental
   system: infrastructure
 ---
@@ -152,10 +152,10 @@ metadata:
   name: charts
   description: Helm charts
   annotations:
-    github.com/project-slug: multiversonline/charts
+    github.com/project-slug: candradebh/charts
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: experimental
   system: infrastructure
 ---
@@ -165,10 +165,10 @@ metadata:
   name: terraform-cloud
   description: Terraform Cloud configuration
   annotations:
-    github.com/project-slug: multiversonline/terraform-cloud
+    github.com/project-slug: candradebh/terraform-cloud
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: infrastructure
 ---
@@ -178,10 +178,10 @@ metadata:
   name: dotfiles
   description: nvim, tmux, zsh, fzf, bspwm, suckless tools, and more!
   annotations:
-    github.com/project-slug: multiversonline/dotfiles
+    github.com/project-slug: candradebh/dotfiles
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
   dependsOn:
@@ -195,10 +195,10 @@ metadata:
   name: st
   description: Simple terminal
   annotations:
-    github.com/project-slug: multiversonline/st
+    github.com/project-slug: candradebh/st
 spec:
   type: application
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
 ---
@@ -208,10 +208,10 @@ metadata:
   name: dmenu
   description: Dynamic menu
   annotations:
-    github.com/project-slug: multiversonline/dmenu
+    github.com/project-slug: candradebh/dmenu
 spec:
   type: application
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
 ---
@@ -221,10 +221,10 @@ metadata:
   name: slock
   description: Suckless lockscreen
   annotations:
-    github.com/project-slug: multiversonline/slock
+    github.com/project-slug: candradebh/slock
 spec:
   type: application
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
 ---
@@ -234,10 +234,10 @@ metadata:
   name: workstation-setup
   description: Automated Arch Linux configuration with Ansible 
   annotations:
-    github.com/project-slug: multiversonline/workstation-setup
+    github.com/project-slug: candradebh/workstation-setup
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
 ---
@@ -247,10 +247,10 @@ metadata:
   name: one-line-firefox
   description: Compact and minimal interface for Firefox 
   annotations:
-    github.com/project-slug: multiversonline/one-line-firefox
+    github.com/project-slug: candradebh/one-line-firefox
 spec:
   type: library
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: workstation
 ---
@@ -260,10 +260,10 @@ metadata:
   name: md2pdf
   description: Simple Markdown to PDF converter
   annotations:
-    github.com/project-slug: multiversonline/one-line-firefox
+    github.com/project-slug: candradebh/one-line-firefox
 spec:
   type: application
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: tools
 ---
@@ -271,11 +271,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: blog
-  description: Khue's blog
+  description: Meu blog
   annotations:
-    github.com/project-slug: multiversonline/blog
+    github.com/project-slug: candradebh/blog
 spec:
   type: website
-  owner: multiversonline
+  owner: candradebh
   lifecycle: production
   system: public
